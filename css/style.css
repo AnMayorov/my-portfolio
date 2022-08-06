@@ -83,6 +83,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0;
   font-size: inherit;
   font-weight: 400;
 }
@@ -98,14 +99,17 @@ h6 {
 body {
   padding: 0 15px;
   font-family: "Inter", sans-serif;
+  font-size: 1rem;
 }
 .flex {
   display: flex;
 }
+.container {
+  margin: 0 auto;
+  max-width: 54.375rem;
+}
 
 /**header*************/
-.header {
-}
 .header__logo {
 }
 .header__menu {
@@ -117,11 +121,9 @@ body {
 .menu__list {
 }
 
-
-.container {
-  margin: 0 auto;
+.header {
   padding: 2.5rem 0;
-  max-width: 54.375rem;
+  margin-bottom: 2.1875em;
 }
 .header__content {
   justify-content: space-between;
@@ -166,3 +168,193 @@ body {
   background-color: var(--color-text-third);
 }
 /*~~~~~~~~~~~~~~~~~~~~*/
+
+/**main**************/
+/*-section hi---------------*/
+.hi__image {
+}
+.hi__sticker {
+}
+.social {
+}
+.social__icon {
+}
+.social__download-icon {
+}
+
+.hi {
+  margin-bottom: 4.5em;
+}
+.hi__content {
+  align-items: center;
+}
+.hi__inform {
+  margin-left: 1.63em;
+}
+.hi__card {
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  max-width: 34.375rem;
+}
+.hi__strong {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.25;
+}
+.hi__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 135%;
+  letter-spacing: 0.02rem;
+  color: var(--color-text-first);
+}
+.hi__text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 135%;
+  letter-spacing: 0.02rem;
+  color: var(--color-text-second);
+}
+.hi__social {
+  align-items: center;
+}
+.social__list {
+  align-items: center;
+  margin-right: 3.4375rem;
+}
+.social__item-link {
+  display: block;
+  padding: 0.5rem;
+}
+/*~~~~~~~~~~~~~~~~~~~~*/
+.social__download {
+  position: relative;
+  align-items: center;
+  padding: 0.4375rem 0.5rem;
+}
+.social__download::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-text-first);
+  transform: scaleX(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.social__download:hover::after {
+  transform: scale(1);
+}
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+.social__download-text {
+  margin-left: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--color-text-second);
+}
+
+/*-section portfolio---------*/
+.portfolio__content {
+}
+.card {
+}
+.card__image {
+}
+
+.portfolio {
+  margin-bottom: 6.5em;
+}
+.portfolio__title {
+  margin-bottom: 0.875em;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.25;
+  color: var(--color-text-first);
+}
+.content {
+  margin: 0 -2.25em;
+}
+.content__wrap {
+  flex: 0 1 46%;
+  padding: 0 2.25rem;
+}
+.content__card {
+  flex-direction: column;
+}
+.card__inform {
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__title {
+  margin-bottom: 0.33333em;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.333333;
+  color: var(--color-text-first);
+}
+.card__list {
+  align-items: center;
+  margin-bottom: 1em
+}
+.card__item {
+  margin-right: 4px;
+}
+.card__item:last-child {
+  margin: 0;
+}
+.card__item-link {
+  padding: 5px 8px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border: 1px solid var(--color-text-third);
+  border-radius: 4px;
+}
+.card__text {
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-second);
+}
+.card__buttons {
+  align-items: center;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+.card__button-link {
+  position: relative;
+  margin-right: 1.5625em;
+  padding: 7px 8px;
+  align-items: center;
+}
+.card__button-link:last-child {
+  margin: 0;
+}
+.card__button-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-text-first);
+  transform: scaleX(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.card__button-link:hover::after {
+  transform: scale(1);
+}
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+.card__button-text {
+  margin-left: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-second);
+}
+
