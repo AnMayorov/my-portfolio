@@ -25,16 +25,16 @@
           <nav class="menu__nav">
             <ul class="menu__list flex">
               <li class="menu__item">
-                <a href="#" class="menu__link">Главная</a>
+                <a href="#hi" class="menu__link">Главная</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Проекты</a>
+                <a href="#portfolio" class="menu__link">Проекты</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Обо мне</a>
+                <a href="#about-me" class="menu__link">Обо мне</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Связаться</a>
+                <a href="#connection" class="menu__link">Связаться</a>
               </li>
             </ul>
           </nav>
@@ -44,7 +44,7 @@
   </header>
   
   <main class="main">
-    <section class="hi">
+    <section class="hi" id="hi">
       <div class="container">
         <div class="hi__content flex">
           <div class="hi__image">
@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="portfolio__title">
           Последние проекты
@@ -196,7 +196,7 @@
                 </ul>
           
                 <p class="card__text">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
                 </p>
           
                 <div class="card__buttons flex">
@@ -219,9 +219,129 @@
         </div>
       </div>
     </section>
+
+    <section class="about-me about" id="about-me">
+      <div class="container">
+        <div class="about__body">
+          <div class="about__content flex">
+            <div class="about__image">
+              <img class="about__photo" src="img/about_me/Artem_photo.jpg" alt="photo">
+            </div>
+
+            <div class="about__info info">
+              <span>Рад вас видеть</span>
+
+              <h2 class="info__title">Я Артем Исламов</h2>
+              <p class="info__text">
+                Я разрабатываю сайты для людей и компаний. Делаю всё сам: составляю прототип, дизайн-макет, пишу код.
+              </p>
+              <h3 class="info__subtitle">Код, Дизайн, Обучение</h3>
+              <p class="info__text text">
+                Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра. Из инструментов есть:
+                Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress
+              </p>
+              <div class="about__info-pic">
+                <img src="img/about_me/signature.svg" alt="signature">
+              </div>
+            </div>
+          </div>
+
+          <div class="about__menu">
+            <h3 class="about__menu-subtitle">
+              Работаю с разными языками и инструментами
+            </h3>
+            <ul class="about__menu-list flex">
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  HTML
+                </a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  CSS
+                </a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  JavaScript
+                </a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  Wordpress
+                </a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  npm
+                </a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  Reactjs
+                </a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  Nextjs
+                </a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  UI Design
+                </a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link flex">
+                  SASS
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="connection" id="connection">
+      <div class="container connection__container">
+        <div class="connection__body">
+          <h2 class="connection__title">Готов обсудить проект...</h2>
+
+          <form class="connection__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <div class="form__group">
+              <label class="form__label" for="userName">Имя</label>
+              <input class="form__input" type="text" id="userName">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="userEmail">Email</label>
+              <input class="form__input" type="email" id="userEmail">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="userMessage">Email</label>
+              <textarea class="form__area" id="userMessage" cols="30" rows="10"></textarea>
+            </div>
+
+            <button class="form__button social__download flex" type="submit">
+              <img class="form__button-icon social__download-icon" src="img/connection/telega_icon.svg" alt="telega">
+              <span class="form__button-text social__download-text">
+                Отправить
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
-
+<footer class="footer">
+  <div class="container">
+    <div class="footer__body flex">
+      <p class="footer__text">
+        Сделано с ❤️ в Казани
+      </p>
+    </div>
+  </div>
+</footer>
 <script src="js/script.js"></script>
 </body>
 </html>

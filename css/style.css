@@ -90,10 +90,13 @@ h6 {
 /**************************************************/
 
 :root {
+  --background-color: #fff;
   --color-text-first: #bf7506;
   --color-text-second: #211b12;
   --color-text-third: #dd9c3c;
   --color-links: #09f;
+  --color-form: #83807c;
+  --color-input: #e0dedc;
 }
 
 body {
@@ -159,17 +162,20 @@ body {
   height: 2px;
   background-color: var(--color-links);
   transform: scaleX(0);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .menu__link:hover::after {
   transform: scale(1);
 }
 .menu__link:active::after {
-  background-color: var(--color-text-third);
+  transform: scale(0);
 }
 /*~~~~~~~~~~~~~~~~~~~~*/
 
 /**main**************/
+.main {
+  margin-bottom: 10em;
+}
 /*-section hi---------------*/
 .hi__image {
 }
@@ -241,10 +247,13 @@ body {
   height: 3px;
   background-color: var(--color-text-first);
   transform: scaleX(0);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .social__download:hover::after {
   transform: scale(1);
+}
+.social__download:active::after {
+  transform: scale(0);
 }
 /*~~~~~~~~~~~~~~~~~~~~*/
 
@@ -343,10 +352,13 @@ body {
   height: 3px;
   background-color: var(--color-text-first);
   transform: scaleX(0);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .card__button-link:hover::after {
   transform: scale(1);
+}
+.card__button-link:active::after {
+  transform: scale(0);
 }
 /*~~~~~~~~~~~~~~~~~~~~*/
 
@@ -358,3 +370,154 @@ body {
   color: var(--color-text-second);
 }
 
+/*-section about me--------*/
+.about__photo {
+}
+.info {
+}
+.about__body {
+}
+
+.about-me {
+  margin-bottom: 7.5em;
+}
+.about__content {
+  margin-bottom: 2.5em;
+}
+.about__image {
+  flex: 1 1 42%;
+}
+.about__info {
+  flex: 1 1 auto/*45.5%*/;
+  margin-left: 3.5em;
+  padding: 1.6875rem 0 0 0;
+}
+.about__info span {
+  margin-bottom: 0.16666em;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.333333;
+  color: var(--color-text-second);
+}
+.info__title {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: var(--color-text-first);
+}
+.info__text {
+  margin-bottom: 1em;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-second);
+}
+.text {
+  margin-bottom: 32px;
+}
+.info__subtitle {
+  margin-bottom: 0.666666em;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--color-text-third);
+}
+.about__menu {
+}
+.about__menu-subtitle {
+  margin-bottom: 0.54166em;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.333333;
+  color: var(--color-text-second);
+}
+.about__menu-list {
+}
+
+.about__menu-item {
+  margin-right: 6px;
+}
+.about__menu-item:last-child {
+  margin: 0;
+}
+.about__menu-link {
+  padding: 5px 8px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid var(--color-text-third);
+  border-radius: 4px;
+  color: var(--color-text-second);
+}
+
+/*-section connection--------*/
+.connection__container {
+  position: relative;
+}
+.connection__container::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  padding-top: 53.8%;
+  width: 45.057%;
+  background: url("../img/connection/hand.jpg") 0 0 / 100% no-repeat;
+  transform: translate(53%, -43%);
+}
+.connection__body {
+  margin: 0 auto;
+  max-width: 27.1875em;
+}
+.connection__title {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: var(--color-text-second);
+}
+.form__group {
+  position: relative;
+  padding-top: 9px;
+  margin-bottom: 1.5em;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  padding: 0 8px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-form);
+  background-color: var(--background-color);
+}
+.form__input {
+  width: 435px;
+  height: 56px;
+  border: 3px solid var(--color-input);
+  border-radius: 4px;
+}
+.form__area {
+  margin-bottom: 24px;
+  width: 435px;
+  min-height: 140px;
+  border: 3px solid var(--color-input);
+  border-radius: 4px;
+}
+.form__button {
+  margin-left: auto;
+}
+
+/**footer************/
+.footer__body {
+  padding: 1rem 0 1rem 0;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-form);
+}
