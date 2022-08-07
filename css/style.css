@@ -385,7 +385,13 @@ body {
   margin-bottom: 2.5em;
 }
 .about__image {
-  flex: 1 1 42%;
+  flex: 0 0 42%;
+}
+.about__photo {
+  width: 360px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .about__info {
   flex: 1 1 auto/*45.5%*/;
