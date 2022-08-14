@@ -25,3 +25,12 @@ forms.forEach((form) => { // для каждой формы...
       .catch((err) => console.error(err));  // если ошибка, выводим в консоль
   })
 })
+
+
+/**При клике трансформирует burger в крестик*/
+$(document).ready(function() {
+  $('.header__burger, .header__link').click(function(event) {
+    $('.header__burger,.header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+});

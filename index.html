@@ -16,29 +16,32 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__content flex">
+      <div class="header__body flex">
         <a href="#" class="header__logo">
           <img src="img/Union-logo.svg" alt="logo">
         </a>
 
-        <div class="header__menu menu">
-          <nav class="menu__nav">
-            <ul class="menu__list flex">
-              <li class="menu__item">
-                <a href="#hi" class="menu__link">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a href="#portfolio" class="menu__link">Проекты</a>
-              </li>
-              <li class="menu__item">
-                <a href="#about-me" class="menu__link">Обо мне</a>
-              </li>
-              <li class="menu__item">
-                <a href="#connection" class="menu__link">Связаться</a>
-              </li>
-            </ul>
-          </nav>
+        
+        <div class="header__burger burger">
+          <span class="burger__line"></span>
         </div>
+
+        <nav class="header__menu">
+          <ul class="header__list flex">
+            <li class="header__item">
+              <a href="#hi" class="header__link">Главная</a>
+            </li>
+            <li class="header__item">
+              <a href="#portfolio" class="header__link">Проекты</a>
+            </li>
+            <li class="header__item">
+              <a href="#about-me" class="header__link">Обо мне</a>
+            </li>
+            <li class="header__item">
+              <a href="#connection" class="header__link">Связаться</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -48,7 +51,7 @@
       <div class="container">
         <div class="hi__content flex">
           <div class="hi__image">
-            <img class="hi__sticker" src="img/hi_section/Artem.svg" alt="Artem">
+            <img class="hi__sticker" src="img/hi_section/my.svg" alt="Anatoliy">
           </div>
 
           <div class="hi__inform">
@@ -58,7 +61,7 @@
                 Я фронтенд-разработчик и веб-дизайнер
               </h1>
               <p class="hi__text">
-                Меня зовут Артем Исламов и я делаю сайты для людей и компаний
+                Меня зовут Анатолий Майоров и я делаю сайты для людей и компаний
               </p>
             </div>
 
@@ -225,13 +228,13 @@
         <div class="about__body">
           <div class="about__content flex">
             <div class="about__image">
-              <img class="about__photo" src="img/about_me/developer_photo.png" alt="photo">
+              <img class="about__photo" src="img/about_me/about_my_photo.jpg" alt="photo">
             </div>
 
             <div class="about__info info">
               <span class="info-span flex">Рад вас видеть</span>
 
-              <h2 class="info__title">Я Артем Исламов</h2>
+              <h2 class="info__title">Я Анатолий Майоров</h2>
               <p class="info__text">
                 Я разрабатываю сайты для людей и компаний. Делаю всё сам: составляю прототип, дизайн-макет, пишу код.
               </p>
@@ -314,7 +317,7 @@
             </div>
             <div class="form__group">
               <label class="form__label" for="userEmail">Email</label>
-              <input class="form__input" type="email" name="client_email"id="userEmail">
+              <input class="form__input" type="email" name="client_email" id="userEmail">
             </div>
             <div class="form__group">
               <label class="form__label" for="userMessage">Email</label>
@@ -337,11 +340,12 @@
   <div class="container">
     <div class="footer__body flex">
       <p class="footer__text">
-        Сделано с ❤️ в Казани
+        Сделано с ❤️ в Воркуте
       </p>
     </div>
   </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
