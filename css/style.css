@@ -215,7 +215,7 @@ body {
       overflow: hidden;
     }
     .header__body {
-      height: 76px;
+      height: 4.75em;
     }
     .header__burger {
       position: relative;
